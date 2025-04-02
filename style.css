@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+text {
+    font-size: 2.3em;
+    fill: white;
+    font-family: sans-serif;
+}
+
+.small_screen-text {
+    display: none;
+}
+
+.small_mask {
+    display: none;
+}
+
+@media (max-width: 746px) {
+
+    text {
+        font-size: 4em;
+    }
+
+    .big_screen-text {
+        display: none;
+    }
+
+    .small_screen-text {
+        display: block;
+    }
+
+    .small_mask {
+        display: block;
+    }
+
+    .masked-rect {
+        mask: url(#small_mask);
+    }
+
+}
