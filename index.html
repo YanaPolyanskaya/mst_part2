@@ -9,70 +9,71 @@
 </head>
 
 <body>
-    <svg viewBox="0 0 500 500" width="100%">
-        <defs>
-            <mask id="big_mask">
-                <rect width="100%" height="100%" x="0" y="0" fill="#fff" />
-
-                <rect width="10em" height="1.5em" x="12em" y="0.8em" fill="black" />
-                <rect width="6em" height="1.5em" x="8.5em" y="3.3em" fill="black" />
-                <rect width="8em" height="1.5em" x="12em" y="5.8em" fill="black" />
-                <rect width="18em" height="1.5em" x="13em" y="8.3em" fill="black" />
-            </mask>
-
-            <mask id="small_mask">
-                <rect width="100%" height="100%" x="0" y="0" fill="#fff" />
-
-                <rect width="9em" height="2.1em" x="21em" y="1.9em" fill="black" />
-                <rect width="16em" height="2.1em" x="4.6em" y="6.2em" fill="black" />
-                <rect width="6.4em" height="2.1em" x="0.8em" y="10.7em" fill="black" />
-                <rect width="4.8em" height="2.1em" x="7.5em" y="19.5em" fill="black" />
-                <rect width="7.7em" height="2.1em" x="22.5em" y="23.8em" fill="black" />
-
-            </mask>
-        </defs>
-
+    <div class="container">
         <foreignObject x="0" y="0" width="100%" height="100%">
-
-            <body xmlns="http://www.w3.org/1999/xhtml">
-                <video width="99%" height="99%" autoplay loop muted playsinline style="object-fit: cover;">
-                    <source src="video/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </body>
+                <div class="video">
+                    <video width="100%" height="100%" autoplay loop muted playsinline webkit-playsinline>
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
         </foreignObject>
 
-        <rect x="0" y="0" width="101%" height="100%" fill="#000" mask="url(#big_mask)" class="masked-rect" />
+        <svg viewBox="0 0 500 450" height="100%">
+            <defs>
+                <mask id="big_mask">
+                    <rect width="100%" height="100%" x="0" y="0" fill="#fff" />
 
-        <g class="big_screen-text">
-            <text x="0.2em" y="1em">We're here</text>
-            <text x="13.5em" y="1em" text-anchor="end">to make</text>
+                    <rect width="10em" height="1.5em" x="12em" y="0.8em" fill="black" />
+                    <rect width="6em" height="1.5em" x="8.5em" y="3.3em" fill="black" />
+                    <rect width="8em" height="1.5em" x="12em" y="5.8em" fill="black" />
+                    <rect width="18em" height="1.5em" x="13em" y="8.3em" fill="black" />
+                </mask>
 
-            <text x="0.2em" y="2.1em">healthy</text>
-            <text x="13.5em" y="2.1em" text-anchor="end">living effortless,</text>
+                <mask id="small_mask">
+                    <rect width="100%" height="100%" x="0" y="0" fill="#fff" />
 
-            <text x="0.2em" y="3.2em">so you can</text>
-            <text x="13.5em" y="3.2em" text-anchor="end">live longer</text>
+                    <rect width="9em" height="2.1em" x="21em" y="1.9em" fill="black" />
+                    <rect width="16em" height="2.1em" x="4.6em" y="6.2em" fill="black" />
+                    <rect width="6.4em" height="2.1em" x="0.8em" y="10.7em" fill="black" />
+                    <rect width="4.8em" height="2.1em" x="7.5em" y="19.5em" fill="black" />
+                    <rect width="7.7em" height="2.1em" x="22.5em" y="23.8em" fill="black" />
 
-            <text x="0.2em" y="4.3em">and happier</text>
-        </g>
+                </mask>
+            </defs>
 
-        <g class="small_screen-text">
-            <text x="0.2em" y="1em">We're here</text>
+            <rect x="0" y="0" width="100%" height="100%" fill="#000" mask="url(#big_mask)" class="masked-rect" />
 
-            <text x="0.2em" y="2.1em">to</text>
-            <text x="7.7em" y="2.1em" text-anchor="end">make</text>
+            <g class="big_screen-text">
+                <text x="0.2em" y="1em">We're here</text>
+                <text x="13.5em" y="1em" text-anchor="end">to make</text>
 
-            <text x="7.7em" y="3.2em" text-anchor="end">healthy living</text>
+                <text x="0.2em" y="2.1em">healthy</text>
+                <text x="13.5em" y="2.1em" text-anchor="end">living effortless,</text>
 
-            <text x="0.2em" y="4.3em">effortless, so you</text>
+                <text x="0.2em" y="3.2em">so you can</text>
+                <text x="13.5em" y="3.2em" text-anchor="end">live longer</text>
 
-            <text x="0.2em" y="5.4em">can</text>
-            <text x="7.7em" y="5.4em" text-anchor="end">live longer</text>
+                <text x="0.2em" y="4.3em">and happier</text>
+            </g>
 
-            <text x="0.2em" y="6.5em">and happier</text>
-        </g>
-    </svg>
+            <g class="small_screen-text">
+                <text x="0.2em" y="1em">We're here</text>
+
+                <text x="0.2em" y="2.1em">to</text>
+                <text x="7.7em" y="2.1em" text-anchor="end">make</text>
+
+                <text x="7.7em" y="3.2em" text-anchor="end">healthy living</text>
+
+                <text x="0.2em" y="4.3em">effortless, so you</text>
+
+                <text x="0.2em" y="5.4em">can</text>
+                <text x="7.7em" y="5.4em" text-anchor="end">live longer</text>
+
+                <text x="0.2em" y="6.5em">and happier</text>
+            </g>
+        </svg>
+    </div>
 </body>
 
 </html>
